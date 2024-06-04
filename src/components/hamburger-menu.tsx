@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Menu, LogIn, User, Bookmark, Settings, LogOut } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { CustomButton } from "@/components/ui/custom-button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,9 +17,9 @@ export default function HamburgerMenu() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="circle" size="icon">
+        <CustomButton variant="circle" size="icon">
           <Menu className="h-4 w-4" />
-        </Button>
+        </CustomButton>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuItem>

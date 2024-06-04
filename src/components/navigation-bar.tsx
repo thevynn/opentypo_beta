@@ -8,7 +8,7 @@ import Logo from "../../public/images/brandLogo.svg";
 
 export default function NavigationBar() {
   return (
-    <header className="flex items-center justify-between bg-white px-4 py-3 shadow-sm dark:bg-neutral-900 md:px-6">
+    <header className="sticky top-0 z-20 w-screen flex items-center justify-between bg-white px-4 py-3 dark:bg-neutral-900 md:px-6">
       <Link href="#" className="flex items-center gap-2" prefetch={false}>
         <Logo
           color="primary dark:white"
